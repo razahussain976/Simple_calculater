@@ -2,7 +2,7 @@
  import inquirer from "inquirer";
 
     const answer = await inquirer.prompt([
-        {message: "Enter first number", type:"number" ,name: "firstNumber"},
+        {message: "Enter your first number", type:"number" ,name: "firstNumber"},
         {message: "Enter second number", type:"number" ,name: "secondNumber"},
         {message: "Select one of the operater to perform operation", type:"list" ,name: "operater", choices:["Addition", "Subtraction", "Multiplication","Division"],
     },
@@ -24,3 +24,4 @@
     else{
         console.log("Please select valid operater");
     };
+    console.log("THE END");
